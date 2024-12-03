@@ -5,18 +5,11 @@ export default function MousePointer({
   x?: number;
   y?: number;
 }) {
-  const pointerSize = 40;
-  const halfSize = pointerSize / 2;
   return (
     <div
-      className={` bg-red-400 fixed`}
+      className={`pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute`}
       style={{
-        top: y - halfSize,
-        left: x - halfSize,
-        width: pointerSize,
-        height: pointerSize,
-        borderRadius: pointerSize,
-        opacity: 0.3,
+        background: `radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
       }}
     />
   );
