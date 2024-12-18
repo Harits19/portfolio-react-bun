@@ -5,10 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      'inter': ["Inter", "sans-serif"],
+
+
+    extend: {
+      fontFamily: {
+        'inter': ["Inter", "sans-serif"],
+      },
+      colors: {
+        'athens-gray': '#F9FAFB',
+        'mischka': '#D1D5DB',
+        'ebony-clay': '#1F2937'
+      },
     },
-    extend: {},
   },
   plugins: [],
 }

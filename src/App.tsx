@@ -5,7 +5,7 @@ function App() {
 
   const {mode} = useThemeState()
   return (
-    <div className={`h-screen w-screen flex flex-col font-inter ${mode === 'dark' ? 'bg-gray-900' : 'bg-white'}`}>
+    <div className={`h-screen w-screen flex flex-col font-inter  ${mode === 'dark' ? 'bg-gray-900 text-athens-gray' : 'bg-white text-gray-900'}`}>
       <HeaderView />
     </div>
   );

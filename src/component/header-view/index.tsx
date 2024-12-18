@@ -9,9 +9,9 @@ export default function HeaderView() {
     <div className="px-20 py-4 flex flex-row items-center">
       <div className="font-bold text-[30px]">{"<AbdullahHarits/>"}</div>
       <Spacer />
-      <div className="flex flex-row gap-x-6 font-medium text-base text-gray-600">
+      <div className={`flex flex-row gap-x-6 font-medium text-base `}>
         {["About", "Work", "Testimonials", "Contact"].map((item) => (
-          <div key={item} className="">
+          <div key={item} className={` ${mode === 'dark' ? 'text-mischka' : 'text-gray-600'}`}>
             {item}
           </div>
         ))}
