@@ -2,12 +2,15 @@ import HeaderView from "./component/header-view";
 import { useThemeState } from "./state/theme_state";
 
 function App() {
-
-  const {mode} = useThemeState()
+  const { mode } = useThemeState();
   return (
-    <div className={`h-screen w-screen flex flex-col font-inter  ${mode === 'dark' ? 'bg-gray-900 text-athens-gray' : 'bg-white text-gray-900'}`}>
-      <HeaderView />
-    </div>
+    <html className={`${mode === "dark" ? "dark " : "light"}`}>
+      <div
+        className={`h-screen w-screen flex flex-col font-inter bg-light-gray-default dark:bg-dark-gray-default text-dark-gray-default dark:text-light-gray-default`}
+      >
+        <HeaderView />
+      </div>
+    </html>
   );
 }
 
