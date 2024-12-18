@@ -11,7 +11,7 @@ export default function HeaderView() {
       <Spacer />
       <div className={`flex flex-row gap-x-6 font-medium text-base `}>
         {["About", "Work", "Testimonials", "Contact"].map((item) => (
-          <div key={item} className={` ${mode === 'dark' ? 'text-mischka' : 'text-gray-600'}`}>
+          <div key={item} className={` text-light-gray-600 dark:text-dark-gray-600`}>
             {item}
           </div>
         ))}
