@@ -1,26 +1,12 @@
-import { useState } from "react";
-import MousePointer from "./component/mouse-pointer";
-import LeftView from "./component/left-view";
-import RightView from "./component/right-view";
+import HeaderView from "./component/header-view";
+import { useThemeState } from "./state/theme_state";
 
 function App() {
-  const [mousePointer, setMousePointer] = useState({
-    x: 0,
-    y: 0,
-  });
 
+  const {mode} = useThemeState()
   return (
-    <div
-      className="w-full h-full flex flex-row "
-      onMouseMove={(event) => {
-        const { clientX, clientY } = event;
-        setMousePointer({ x: clientX, y: clientY });
-      }}
-    >
-      <LeftView />
-      <RightView />
-
-      <MousePointer x={mousePointer.x} y={mousePointer.y} />
+    <div className={`h-screen w-screen flex flex-col font-inter ${mode === 'dark' ? 'bg-gray-900' : 'bg-white'}`}>
+      <HeaderView />
     </div>
   );
 }
