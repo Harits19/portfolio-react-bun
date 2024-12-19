@@ -1,10 +1,10 @@
-import assets from "../../constan/assets";
 import { useScrollState } from "../../state/scroll_state";
 import { useThemeState } from "../../state/theme_state";
 import Button from "../button";
 import Divider from "../divider";
 import IconButton from "../icon-button";
 import Spacer from "../spacer";
+import Icons from "../svg";
 
 export default function HeaderView() {
   const { mode, setMode } = useThemeState();
@@ -42,7 +42,7 @@ export default function HeaderView() {
         <Divider />
 
         <IconButton
-          icon={mode === "dark" ? assets.icon.darkMode : assets.icon.lightMode}
+          icon={mode === "dark" ? <Icons.DarkMode /> : <Icons.LightMode />}
           onClick={() => {
             if (mode === "dark") {
               setMode("light");
