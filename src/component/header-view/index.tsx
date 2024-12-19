@@ -3,6 +3,7 @@ import { useScrollState } from "../../state/scroll_state";
 import { useThemeState } from "../../state/theme_state";
 import Button from "../button";
 import Divider from "../divider";
+import IconButton from "../icon-button";
 import Spacer from "../spacer";
 
 export default function HeaderView() {
@@ -19,7 +20,9 @@ export default function HeaderView() {
   return (
     <div
       className={`px-20 py-4 flex flex-row items-center   ${
-        isScrolled ? "backdrop-blur-xl border-light-gray-100 dark:border-dark-gray-100 bg-light-gray-50 dark:bg-dark-gray-50" : ""
+        isScrolled
+          ? "backdrop-blur-xl border-light-gray-100 dark:border-dark-gray-100 bg-light-gray-50 dark:bg-dark-gray-50"
+          : ""
       }`}
     >
       <div className="font-bold text-[30px]">{"<AbdullahHarits/>"}</div>
@@ -38,7 +41,8 @@ export default function HeaderView() {
 
         <Divider />
 
-        <button
+        <IconButton
+          icon={mode === "dark" ? assets.icon.darkMode : assets.icon.lightMode}
           onClick={() => {
             if (mode === "dark") {
               setMode("light");
@@ -46,11 +50,7 @@ export default function HeaderView() {
               setMode("dark");
             }
           }}
-        >
-          <img
-            src={mode === "dark" ? assets.icon.darkMode : assets.icon.lightMode}
-          />
-        </button>
+        />
         <div className="flex flex-row items-center gap-x-1">
           <Button
             onClick={() => {
