@@ -1,7 +1,7 @@
 import assets from "../../constan/assets";
 import AboutViewDetail from "../about-view-detail";
 import IconButton from "../icon-button";
-import Icons from "../svg";
+import Icons, { IconType } from "../svg";
 
 export default function AboutView() {
   const RenderImage = () => (
@@ -14,7 +14,9 @@ export default function AboutView() {
     <div className="px-20 py-24 flex flex-row gap-x-12 text-body2">
       <div className="flex flex-col flex-1 gap-y-12">
         <div className="flex flex-col">
-          <div className="text-h1-desktop">Hi, I'm Harits</div>
+          <div className="text-h1-desktop flex flex-row">
+            Hi, I'm Harits <div className="-mt-2 animate-wiggle">👋</div>
+          </div>
           <div className="text-body2">
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating (and occasionally designing) exceptional digital
@@ -41,15 +43,15 @@ export default function AboutView() {
         <div className="flex flex-row ">
           {[
             {
-              icon: <Icons.Github />,
+              icon: "Github" as IconType,
               link: "https://github.com/Harits19",
             },
             {
-              icon: <Icons.Github />,
+              icon: "Github" as IconType,
               link: "https://linkedin.com/in/abd-harits",
             },
             {
-              icon: <Icons.Github />,
+              icon: "Github" as IconType,
               link: "https://instagram.com/abd.harits19",
             },
           ].map((item) => (

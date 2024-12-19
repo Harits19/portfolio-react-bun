@@ -10,6 +10,20 @@ export default {
 
 
     extend: {
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+
+      },
+      keyframes: {
+        waving: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '25%, 50%, 75%, 99%': { transform: 'rotate(3deg)' },
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '25%, 50%, 75%': { transform: 'rotate(10deg)' },
+        }
+      },
       fontFamily: {
         'inter': ["Inter", "sans-serif"],
       },

@@ -4,7 +4,6 @@ import Button from "../button";
 import Divider from "../divider";
 import IconButton from "../icon-button";
 import Spacer from "../spacer";
-import Icons from "../svg";
 
 export default function HeaderView() {
   const { mode, setMode } = useThemeState();
@@ -42,7 +41,7 @@ export default function HeaderView() {
         <Divider />
 
         <IconButton
-          icon={mode === "dark" ? <Icons.DarkMode /> : <Icons.LightMode />}
+          icon={mode === "dark" ? "DarkMode" : "LightMode"}
           onClick={() => {
             if (mode === "dark") {
               setMode("light");
