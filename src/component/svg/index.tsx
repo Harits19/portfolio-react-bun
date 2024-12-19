@@ -5,7 +5,7 @@ import Location from "./assets/location-icon.svg?react";
 import Instagram from "./assets/instagram-icon.svg?react";
 import Linkedin from "./assets/linkedin-icon.svg?react";
 
-import ExpressJs from "./assets/exoressjs-icon.svg?react";
+import ExpressJs from "./assets/expressjs-icon.svg?react";
 import Flutter from "./assets/flutter-icon.svg?react";
 import Gcp from "./assets/gcp-icon.svg?react";
 import Git from "./assets/git-icon.svg?react";

@@ -47,11 +47,11 @@ export default function AboutView() {
               link: "https://github.com/Harits19",
             },
             {
-              icon: "Github" as IconType,
+              icon: "Linkedin" as IconType,
               link: "https://linkedin.com/in/abd-harits",
             },
             {
-              icon: "Github" as IconType,
+              icon: "Instagram" as IconType,
               link: "https://instagram.com/abd.harits19",
             },
           ].map((item) => (
