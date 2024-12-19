@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  
+
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -12,6 +12,35 @@ export default {
     extend: {
       fontFamily: {
         'inter': ["Inter", "sans-serif"],
+      },
+      fontSize: {
+
+        'h1-desktop': [
+          '60px', {
+            lineHeight: '72px',
+            letterSpacing: '-2%',
+            fontWeight: 700,
+
+          }
+        ],
+        'h1-tablet': [
+          '48px', {
+            lineHeight: '48px',
+            letterSpacing: '-2%',
+            fontWeight: 700,
+
+          }
+        ],
+        'h1-mobile': [
+          '36px', {
+            lineHeight: '40px',
+            fontWeight: 600,
+          }
+        ],
+        'body2': [
+          '16px',
+          '24px'
+        ]
       },
       colors: {
 
