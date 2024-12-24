@@ -54,7 +54,8 @@ export default {
         'body2': [
           '16px',
           '24px'
-        ]
+        ],
+        'body3': ['14px', '20px'],
       },
       colors: {
 

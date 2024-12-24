@@ -3,6 +3,7 @@ import AboutView from "./component/about-view";
 import HeaderView from "./component/header-view";
 import { useThemeState } from "./state/theme_state";
 import { ScrollContext } from "./state/scroll_state";
+import AboutMeView from "./component/about-me-view";
 
 function App() {
   const { mode } = useThemeState();
@@ -31,6 +32,7 @@ function App() {
               <HeaderView />
             </div>
             <AboutView />
+            <AboutMeView />
             <div className="h-[10000px]" />
           </div>
         </div>

@@ -1,19 +1,14 @@
 import assets from "../../constan/assets";
 import AboutViewDetail from "../about-view-detail";
 import IconButton from "../icon-button";
+import ImageView from "../image-view";
 import Icons, { IconType } from "../svg";
 
 export default function AboutView() {
-  const RenderImage = () => (
-    <img
-      src={assets.image.profileSquare}
-      className="w-[280px] h-[320px] object-cover border-8 border-light-gray-default dark:border-dark-gray-default "
-    />
-  );
   return (
     <div className="px-20 py-24 flex flex-row gap-x-12 text-body2">
       <div className="flex flex-col flex-1 gap-y-12">
-        <div className="flex flex-col">
+        <div className="flex flex-col mr-28">
           <div className="text-h1-desktop flex flex-row">
             Hi, I'm Harits <div className="-mt-2 animate-wiggle">👋</div>
           </div>
@@ -64,15 +59,7 @@ export default function AboutView() {
           ))}
         </div>
       </div>
-      <div className="relative flex flex-col">
-        <div className="w-[280px] h-[320px]    left-7 top-7 absolute z-auto bg-light-gray-200 dark:bg-dark-gray-200" />
-        <div className="opacity-0">
-          <RenderImage />
-        </div>
-        <div className="absolute">
-          <RenderImage />
-        </div>
-      </div>
+      <ImageView src={assets.image.profileSquare} />
     </div>
   );
 }
