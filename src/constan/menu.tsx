@@ -1,18 +1,23 @@
-import AboutView from "../component/about-view";
-import ExperienceView from "../component/experience-view";
-import ProjectView from "../component/project-view";
+import AboutMeView from "../component/about-me-view";
+import ContactView from "../component/contact-view";
+import TestimonialView from "../component/testimonial-view";
+import WorkView from "../component/work-view";
 
 export const menus = [
   {
     name: "About",
-    view: <AboutView />,
+    view: <AboutMeView />,
   },
   {
-    name: "Project",
-    view: <ProjectView />,
+    name: "Work",
+    view: <WorkView />,
   },
   {
-    name: "Experience",
-    view: <ExperienceView />,
+    name: "Testimonials",
+    view: <TestimonialView />,
+  },
+  {
+    name: "Contact",
+    view: <ContactView />,
   },
 ];

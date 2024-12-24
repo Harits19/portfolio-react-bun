@@ -1,3 +1,4 @@
+import { menus } from "../../constan/menu";
 import { useScrollState } from "../../state/scroll_state";
 import { useThemeState } from "../../state/theme_state";
 import Button from "../button";
@@ -29,13 +30,18 @@ export default function HeaderView() {
       <div
         className={`flex flex-row gap-x-6 font-medium text-base items-center `}
       >
-        {["About", "Work", "Testimonials", "Contact"].map((item) => (
-          <div
-            key={item}
+        {menus.map((item) => (
+          <button
+            onClick={() => {
+              document
+                .getElementById(item.name)
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            key={`${item.name}-menu`}
             className={` text-light-gray-600 dark:text-dark-gray-600`}
           >
-            {item}
-          </div>
+            {item.name}
+          </button>
         ))}
 
         <Divider />
