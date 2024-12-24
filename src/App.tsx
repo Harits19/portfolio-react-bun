@@ -18,7 +18,7 @@ function App() {
         <div
           className={`h-screen w-screen flex flex-col overflow-y-scroll font-inter no-scrollbar bg-light-gray-default dark:bg-dark-gray-default text-dark-gray-default dark:text-light-gray-default`}
         >
-          <div className="fixed top-0 w-full">
+          <div className="fixed top-0 w-full z-50">
             <HeaderView />
           </div>
           <div
