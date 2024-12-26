@@ -12,11 +12,9 @@ export default function ImageView({
     />
   );
   return (
-    <div className="relative flex flex-col">
-      <div className="w-[280px] h-[320px]    left-7 top-7 absolute z-auto bg-light-gray-200 dark:bg-dark-gray-200" />
-      <div className="opacity-0">
-        <RenderImage />
-      </div>
+    <div className="relative flex flex-col w-fit">
+      <div className="w-[280px] h-[320px] ml-7 mt-7 bg-light-gray-200 dark:bg-dark-gray-200" />
+
       <div className="absolute">
         <RenderImage />
       </div>

@@ -29,6 +29,18 @@ export default {
       },
       fontSize: {
 
+        'h3-desktop': [
+          '30px', {
+            lineHeight: '36px',
+            letterSpacing: '-2%',
+          }
+        ],
+        'subtitle-desktop': [
+          '20px', {
+            lineHeight: '28px',
+            letterSpacing: '0%',
+          }
+        ],
         'h1-desktop': [
           '60px', {
             lineHeight: '72px',
