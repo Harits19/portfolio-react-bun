@@ -1,5 +1,5 @@
 export default {
   image: {
-    profileSquare: "/image-1-profile-square.jpeg",
+    profileSquare: "portfolio-react-bun/image-1-profile-square.jpeg",
   },
 };
