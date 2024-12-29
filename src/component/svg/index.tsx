@@ -13,8 +13,11 @@ import Golang from "./assets/golang-icon.svg?react";
 import MongoDb from "./assets/mongodb-icon.svg?react";
 import MySql from "./assets/mysql-icon.svg?react";
 import NextJs from "./assets/nextjs-icon.svg?react";
+import Link from "./assets/link-icon.svg?react";
+
 
 const Icons = {
+  Link,
   Github,
   DarkMode,
   LightMode,
