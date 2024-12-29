@@ -13,5 +13,6 @@ export default {
     skyshi: basePath + "skyshi.png",
     smartfren: basePath + "smartfren.png",
     soundfren: basePath + "soundfren.webp",
+    oneEngage: basePath + "1engage.avif",
   },
 } as const;
