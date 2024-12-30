@@ -21,7 +21,7 @@ export default function HeaderView() {
     <div
       className={`px-20 py-4 flex flex-row items-center   ${
         isScrolled
-          ? "backdrop-blur-xl border-light-gray-100 dark:border-dark-gray-100 bg-light-gray-50 dark:bg-dark-gray-50"
+          ? "backdrop-blur-xl border-light-gray-100 dark:border-dark-gray-100 "
           : ""
       }`}
     >
@@ -71,6 +71,13 @@ export default function HeaderView() {
             }}
           >
             Download CV
+          </Button>
+          <Button
+            onClick={() => {
+              openNewTab("https://harits19.github.io");
+            }}
+          >
+            Flutter Web Portfolio
           </Button>
         </div>
       </div>
