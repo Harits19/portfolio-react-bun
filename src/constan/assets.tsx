@@ -5,7 +5,7 @@ export default {
     profileSquare: basePath + "image-1-profile-square.jpeg",
 
     ayolunas: basePath + "ayolunas.png",
-    batumbu: basePath + "batumbu",
+    batumbu: basePath + "batumbu-screenshoot.jpg",
     imaniPrima: basePath + "imani-prima.png",
     pejuang: basePath + "pejuang.png",
     pejuangIcon: basePath + "pejuang.webpb",
