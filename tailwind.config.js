@@ -35,6 +35,13 @@ export default {
             letterSpacing: '-2%',
           }
         ],
+
+        'h2-desktop': [
+          '36px', {
+            lineHeight: '40px',
+            letterSpacing: '-2%',
+          }
+        ],
         'subtitle-desktop': [
           '20px', {
             lineHeight: '28px',

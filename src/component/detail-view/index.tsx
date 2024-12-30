@@ -23,7 +23,7 @@ export default function DetailView({
       <Tag>{title}</Tag>
       <div className="h-4" />
       {desc && (
-        <div className="text-subtitle-desktop text-light-gray-600 dark:text-dark-gray-600">
+        <div className="text-subtitle-desktop text-light-gray-600 dark:text-dark-gray-600 whitespace-pre-line text-center">
           {desc}
         </div>
       )}

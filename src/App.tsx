@@ -4,6 +4,7 @@ import HeaderView from "./component/header-view";
 import { useThemeState } from "./state/theme_state";
 import { ScrollContext } from "./state/scroll_state";
 import { menus } from "./constan/menu";
+import CopyRightView from "./component/copyright-view";
 
 function App() {
   const { mode } = useThemeState();
@@ -35,7 +36,7 @@ function App() {
             {menus.map(({ name, view }) => (
               <div id={name}>{view}</div>
             ))}
-            <div className="h-[10000px]" />
+            <CopyRightView />
           </div>
         </div>
       </div>

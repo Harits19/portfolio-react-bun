@@ -14,9 +14,16 @@ import MongoDb from "./assets/mongodb-icon.svg?react";
 import MySql from "./assets/mysql-icon.svg?react";
 import NextJs from "./assets/nextjs-icon.svg?react";
 import Link from "./assets/link-icon.svg?react";
-
+import Phone from "./assets/phone-icon.svg?react";
+import Email from "./assets/email-icon.svg?react";
+import Copy from "./assets/copy-icon.svg?react";
+import Copyright from "./assets/copyright-icon.svg?react";
 
 const Icons = {
+  Copyright,
+  Phone,
+  Email,
+  Copy,
   Link,
   Github,
   DarkMode,
@@ -31,7 +38,7 @@ const Icons = {
   Golang,
   MongoDb,
   MySql,
-  NextJs
+  NextJs,
 };
 
 export type IconType = keyof typeof Icons;
