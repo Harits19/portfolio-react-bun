@@ -13,11 +13,11 @@ export default function AboutView() {
             Hi, I'm Harits <div className="-mt-2 animate-wiggle">👋</div>
           </div>
           <div className="text-body2">
-            I'm a full stack developer (React.js & Node.js) with a focus on
-            creating (and occasionally designing) exceptional digital
-            experiences that are fast, accessible, visually appealing, and
-            responsive. Even though I have been creating web applications for
-            over 7 years, I still love it as if it was something new.
+            I have experience as a full stack developer but I'm only confident
+            in mobile app development. I have an interest in a career related to
+            Flutter, Go, React Native, and the latest technologies or
+            frameworks. Known as a fast learner and likes to work on projects on
+            time.
           </div>
         </div>
         <div>
