@@ -9,7 +9,7 @@ import CopyRightView from "./component/copyright-view";
 function App() {
   const { mode } = useThemeState();
   const [scrollTop, setScrollTop] = useState(0);
-  const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
+  const [showUnderDevelopment, setShowUnderDevelopment] = useState(false);
   const isScrolled = scrollTop > 0;
   const ref = useRef<HTMLDivElement>(null);
   return (
