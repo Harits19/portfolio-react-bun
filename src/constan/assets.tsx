@@ -14,6 +14,7 @@ export default {
     smartfren: basePath + "smartfren.png",
     soundfren: basePath + "soundfren.webp",
     oneEngage: basePath + "1engage.avif",
-    oneEngageWeb: basePath + "1engage-web.png"
+    oneEngageWeb: basePath + "1engage-web.png",
+    weddingInvitationAppWeb: basePath + "wedding-invitation-app-web.png",
   },
 } as const;

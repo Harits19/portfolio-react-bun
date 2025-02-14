@@ -2,11 +2,11 @@ import assets from "./assets";
 
 export const work = [
   {
-    image: assets.image.oneEngageWeb,
+    image: assets.image.weddingInvitationAppWeb,
     name: "Wedding Invitation",
     desc: "Sebuah aplikasi tentang undangan pernikahan yang sudah saya lakukan tahun lalu. Aplikasi ini bertujuan untuk mengembangkan skill frontend saya yang berkaitan dengan animasi dan bentuk-bentuk unik didalam desainnya.",
     link: "https://harits19.github.io/wedding-app/",
-    skill: ["React JS", "Next JS"],
+    skill: ["React JS", "Next JS", "Bun"],
   },
   {
     image: assets.image.oneEngageWeb,
